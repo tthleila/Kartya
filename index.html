@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="stilus.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kártyák</title>
+</head>
+<body>
+    <div id="gradient">
+        <div class="toast" id="toast">
+            <button class="close-btn" onclick="closeToast()">x</button>
+            <img src="en.jpg" alt="Toast ikon">
+            <p>Tóth Leila Anasztázia vagyok, a Gépészetibe járok.</p>
+            <p> Ezek itt a munkáim.</p>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li> <a href='#sec1' id="a2">About</a> </li>
+                <li> <a href='#sec2' id="a2">Skills</a> </li>
+                <li> <a href='#sec3' id="a2">Experience</a> </li>
+                <li> <a href='#sec4' id="a2">Education</a> </li>
+                <li> <a href='#sec5' id="a2">Portfolio</a> </li>
+            </ul>
+        </nav>
+        <div id="kozep" class="card-container">
+            <div id="kartya" class="card">
+                <img width="100%" src="6.jpg" id="kep" alt="minecraft">
+                <div id="kartya-szoveg" class="card-content">
+                    <h3> Projekt </h3>
+                    <h2>Projektek</h2>
+                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                    <a href="https://sites.google.com/view/ita-tla10b/projekt" id="tovabb" class="card-link">TOVÁBB</a>
+                </div>
+            </div>
+            <div id="kartya" class="card">
+                <img width="100%" src="5.jpg" id="kep1" alt="minecraft">
+                <div id="kartya-szoveg" class="card-content">
+                    <h3>Programozás</h3>
+                    <h2>Programok</h2>
+                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                    <a href="https://sites.google.com/view/ita-tla10b/web?authuser=0" id="tovabb" class="card-link">TOVÁBB</a>
+                </div>
+            </div>
+            <div id="kartya" class="card">
+                <img width="100%" src="4.jpg" id="kep" alt="minecraft">
+                <div id="kartya-szoveg" class="card-content">
+                    <h3>Bemutatkozás</h3>
+                    <h2>Bemutatkozás</h2>
+                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                    <a href="https://sites.google.com/view/ita-tla10b/bemutatkoz%C3%A1s?authuser=0" id="tovabb" class="card-link">TOVÁBB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="sotetModGomb" onclick="toggleSotetMod()">Sötét mód</button>
+
+    <script>
+    function toggleSotetMod() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+
+    function closeToast() {
+      var toast = document.getElementById('toast');
+      toast.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
