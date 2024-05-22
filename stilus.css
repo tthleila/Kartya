@@ -7,7 +7,7 @@ body, html {
 }
 
 #p2 {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 #kozep {
@@ -36,7 +36,7 @@ body, html {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: indianred;
@@ -45,7 +45,7 @@ h3 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 15px;
 }
 
 #tovabb {
