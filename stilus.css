@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-size: larger;
-    background-color:indianred;
+    background-color: indianred;
 }
 
 #p2 {
@@ -33,6 +33,7 @@ body, html {
     padding-left: 15px;
     padding-right: 35px;
     padding-bottom: 5px;
+    text-align:center;
 }
 
 h3 {
@@ -80,8 +81,9 @@ a {
 .dark-mode #gradient {
     background: linear-gradient(-45deg, #333333, #222222, #111111, #000000);
 }
-.dark-mode body{
-    background-color:black;
+
+.dark-mode body {
+    background-color: black;
 }
 
 #sotetModGomb {
@@ -96,6 +98,7 @@ a {
     border-radius: 30px;
     text-align: center;
 }
+
 .dark-mode nav {
     background-color: dimgrey;
     color: #fff;
@@ -129,7 +132,6 @@ a {
 }
 
 .dark-mode #sotetModGomb {
-
     background-color: #4a4a4a56;
     color: #FFFFFF;
     border: none;
@@ -251,10 +253,9 @@ img {
     background-color: indianred;
     color: #fff;
     padding: 20px;
-    border:5px outset darkred;
+    border: 5px outset darkred;
     border-radius: 30px;
     text-align: center;
-
 }
 
     .toast img {
@@ -273,4 +274,94 @@ img {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.parallax {
+   
+    background-image: url("2.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+form{
+    text-align:center;
+}
+label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    text-align:center;
+    padding: 5px;
+    border: 1px solid darkred;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+    button:hover {
+        background-color: darkred;
+        color: white;
+    }
+#list {
+    height:1000px;
+    background-color:indianred;
+    font-size:20px;
+}
+.dark-mode #list{
+    background-color:black;
+}
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+    
+.dark-mode input[type="text"] {
+    background-color: black;
+    color:white;
+    border: 1px solid white;
+}
+.dark-mode label{
+    color:white;
+}
+.dark-mode .parallax {
+    background-image: url("4.jpg");
+}
+.dark-mode h1 {
+    color: white;
+}
+.dark-mode .mind{
+    background-color:black;
+}
+.dark-mode #al-p{
+    background-color:black;
+}
+.dark-mode .container{
+    background-color:black;
+}
+.dark-mode #task-list{
+    color:white;
 }
