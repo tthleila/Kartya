@@ -13,60 +13,91 @@
             <button class="close-btn" onclick="closeToast()">x</button>
             <img src="en.jpg" alt="Toast ikon">
             <p>Tóth Leila Anasztázia vagyok, a Gépészetibe járok informatikai szakon.</p>
-            <p> Ezek itt a munkáim.</p>
+            <p> Ezek itt pedig az eddigi munkáim.</p>
         </div>
 
         <nav id="navMenu">
             <ul>
-                <li> <a href='#sec1' id="a2">About</a> </li>
-                <li> <a href='#sec2' id="a2">Skills</a> </li>
-                <li> <a href='#sec3' id="a2">Experience</a> </li>
-                <li> <a href='#sec4' id="a2">Education</a> </li>
-                <li> <a href='#sec5' id="a2">Portfolio</a> </li>
+                <li> <a href='https://sites.google.com/view/ita-tla10b/bemutatkoz%C3%A1s?authuser=0' id="a2">Bemutatkozás</a> </li>
+                <li> <a href='https://sites.google.com/view/ita-tla10b/projekt' id="a2">Projekt</a> </li>
+                <li> <a href='https://sites.google.com/view/ita-tla10b/ita' id="a2">ITA</a> </li>
+                <li> <a href='https://sites.google.com/view/ita-tla10b/web?authuser=0' id="a2">Web</a> </li>
+                <li> <a href='https://sites.google.com/view/ita-tla10b/digikult' id="a2">Digikult</a> </li>
             </ul>
         </nav>
+
+
         <div id="kozep" class="card-container">
             <div id="kartya" class="card">
-                <img width="100%" src="4.jpg" id="kep" alt="minecraft">
+                <img width="100%" src="7.jfif" id="kep" alt="virag">
                 <div id="kartya-szoveg" class="card-content">
                     <h3> Projekt </h3>
-                    <h2>Projektek</h2>
-                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                    <h2>Alkalmazások</h2>
+                    <p id="p2">Canva, GSites, Sway, Trello, Wakelet, Word, Excel,PPoint</p>
                     <a href="https://sites.google.com/view/ita-tla10b/projekt" id="tovabb" class="card-link">TOVÁBB</a>
                 </div>
-            </div>
+            </div>  
             <div id="kartya" class="card">
-                <img width="100%" src="4.jpg" id="kep1" alt="minecraft">
-                <div id="kartya-szoveg" class="card-content">
-                    <h3>Programozás</h3>
-                    <h2>Programok</h2>
-                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
-                    <a href="https://sites.google.com/view/ita-tla10b/web?authuser=0" id="tovabb" class="card-link">TOVÁBB</a>
-                </div>
-            </div>
-            <div id="kartya" class="card">
-                <img width="100%" src="4.jpg" id="kep" alt="minecraft">
+                <img width="100%" src="7.jfif" id="kep" alt="virag">
                 <div id="kartya-szoveg" class="card-content">
                     <h3>Bemutatkozás</h3>
-                    <h2>Bemutatkozás</h2>
-                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                    <h2>Önéletrajz</h2>
+                    <p id="p2">A digital nomád életstílus évek óta egyre népszerűbb</p>
                     <a href="https://sites.google.com/view/ita-tla10b/bemutatkoz%C3%A1s?authuser=0" id="tovabb" class="card-link">TOVÁBB</a>
                 </div>
             </div>
+            <div id="kartya" class="card">
+                <img width="100%" src="7.jfif" id="kep1" alt="virag">
+                <div id="kartya-szoveg" class="card-content">
+                    <h3>Programozás</h3>
+                    <h2>Program nyelvek</h2>
+                    <p id="p2">HTML, CSS, JAVASCRIPT, PYTHON, C#</p>
+                    <a href="https://sites.google.com/view/ita-tla10b/web?authuser=0" id="tovabb" class="card-link">TOVÁBB</a>
+                </div>
+            </div>
+
         </div>
+        <br />
+        <div class="parallax"></div>
+        <div id="list">
+            <div class="container">
+                <h1>To-Do List</h1>
+                <form>
+                    <label for="task">Teendők</label>
+                    <input type="text" id="task" name="task" placeholder="Szöveg">
+                    <button type="button" onclick="addTask()">Hozzá add</button>
+                </form>
+                <ul id="task-list">
+                </ul>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <button id="sotetModGomb" onclick="toggleSotetMod()">Sötét mód</button>
     </div>
-    <button id="sotetModGomb" onclick="toggleSotetMod()">Sötét mód</button>
-
     <script>
-    function toggleSotetMod() {
-      var body = document.body;
-      body.classList.toggle("dark-mode");
-    }
+        function toggleSotetMod() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
 
-    function closeToast() {
-      var toast = document.getElementById('toast');
-      toast.style.display = 'none';
-    }
+        function closeToast() {
+            var toast = document.getElementById('toast');
+            toast.style.display = 'none';
+        }
+        function addTask() {
+            var taskInput = document.getElementById("task");
+            var taskValue = taskInput.value;
+            var li = document.createElement("li");
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            li.appendChild(checkbox);
+            var textNode = document.createTextNode(taskValue);
+            li.appendChild(textNode);
+            var ul = document.getElementById("task-list");
+            ul.appendChild(li);
+            taskInput.value = "";
+        }
+      
     </script>
 </body>
 </html>
